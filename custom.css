@@ -1,0 +1,17 @@
+body {
+background-color: #BBBBFF;
+}
+.reveal p {
+}
+.reveal ul, ol {
+}
+div.output_area pre {
+}
+div.output_stderr {
+}
+.reveal table th, .reveal table td {
+}
+
+div.prompt {
+   display:none;
+}
