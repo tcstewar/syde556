@@ -1,9 +1,14 @@
 body {
-background-color: #BBBBFF;
+    background-color: #BBBBFF;
 }
 .reveal p {
 }
+.reveal div.rendered_html {
+    font-size: larger;
+}
+
 .reveal ul, ol {
+    line-height: 150%;
 }
 div.output_area pre {
 }
