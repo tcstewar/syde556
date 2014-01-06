@@ -1762,7 +1762,7 @@ In&nbsp;[1]:
 </div>
 <div class="input_area box-flex1">
 <div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
-<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s">&#39;U_Q6Xjz9QHg&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">720</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">autoplay</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">playlist</span><span class="o">=</span><span class="s">&#39;U_Q6Xjz9QHg&#39;</span><span class="p">)</span>
+<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s">&#39;U_Q6Xjz9QHg&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">720</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">loop</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">autoplay</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">playlist</span><span class="o">=</span><span class="s">&#39;U_Q6Xjz9QHg&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1783,7 +1783,7 @@ In&nbsp;[1]:
         <iframe
             width="720"
             height=400"
-            src="http://www.youtube.com/embed/U_Q6Xjz9QHg?playlist=U_Q6Xjz9QHg&loop=1&autoplay=1"
+            src="http://www.youtube.com/embed/U_Q6Xjz9QHg?playlist=U_Q6Xjz9QHg&loop=1&autoplay=0"
             frameborder="0"
             allowfullscreen
         ></iframe>
@@ -1815,6 +1815,7 @@ In&nbsp;[1]:
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="administration">Administration</h1>
 <ul>
+<li>Course website: <a href="http://compneuro.uwaterloo.ca/research/syde-750.html">http://compneuro.uwaterloo.ca/research/syde-750.html</a></li>
 <li>Contact information</li>
 <li>Terry Stewart: <a href="mailto:tcstewar@uwaterloo.ca">tcstewar@uwaterloo.ca</a></li>
 <li>Course times: 11:00-12:30 DWE 3519</li>
@@ -1824,8 +1825,22 @@ In&nbsp;[1]:
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="coursework">Coursework</h2>
 <ul>
-<li>Four assignments</li>
-<li>Final project</li>
+<li>Four assignments (60%)
+<ul>
+<li>20%, 20%, 10%, 10%</li>
+<li>Two weeks for each assignment, except last one (one week)</li>
+<li>Everyone writes their own code, generates their own graphs, writes their own answers
+<ul>
+<li>But it helps to get together to discuss things</li>
+</ul></li>
+</ul></li>
+<li>Final project
+<ul>
+<li>Make a novel model of some neural system</li>
+<li>For 556 students, this can be just an extension of something seen in class</li>
+<li>For 750 students, this must be more of a research project</li>
+<li><a href="http://compneuro.uwaterloo.ca/research/syde-750/syde-556-possible-projects.html">ideas</a></li>
+</ul></li>
 </ul>
 </div></section><section>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -1947,64 +1962,574 @@ Project Presentations
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="my-background">My Background</h1>
-</div></section>
+<ul>
+<li>Undergrad: Systems (Waterloo)
+<ul>
+<li>option in Cognitive Science</li>
+</ul></li>
+<li>Masters of Philosophy in Computer Science and AI (Sussex)
+<ul>
+<li>experimental psychology on robots</li>
+</ul></li>
+<li>PhD in Cognitive Science (Carleton)
+<ul>
+<li>philosophy of computational modelling</li>
+</ul></li>
+</ul>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="research-theme">Research Theme</h2>
+<ul>
+<li>How does the mind work?</li>
+<li>Most complex and most interesting system humanity has ever studied
+<ul>
+<li>Why study anything else?</li>
+</ul></li>
+<li>How should we go about studying it?
+<ul>
+<li>What techniques/tools?</li>
+<li>How do we know if we're making progress?</li>
+<li>How do we deal with the complexity?</li>
+</ul></li>
+</ul>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="standard-approach">Standard Approach</h2>
+<ul>
+<li>Psychology <img src="lecture1/WorkingMemory.jpg" width=400 style="float:right">
+<ul>
+<li>Measure people's performance in lots of situations</li>
+<li>Describe processes that might explain observations</li>
+<li>Example: memory</li>
+</ul></li>
+</ul>
+</div><div class="fragment">
+    
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Problems
+<ul>
+<li>Hard to get quantitative predictions</li>
+<li>Compare to Aristotelian gravity
+<ul>
+<li>&quot;All bodies move toward their natural place&quot;</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+    </div></section>
     </section><section>
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="cognitive-modelling">Cognitive Modelling</h1>
+<ul>
+<li>Let's build it <img src="lecture1/understand.gif" style="float:right">
+<ul>
+<li>Specify theory in enough detail that this is possible</li>
+<li>Tends to get complex, so need computer simulation</li>
+</ul></li>
+<li>Do for psychology what Newton did for physics
+<ul>
+<li>Note that Newton got lucky that gravity turned out to be analytically tractable</li>
+<li>If he had a computer, he wouldn't have had to invent calculus</li>
+</ul></li>
+</ul>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="cognitive-models">Cognitive Models</h2>
+<ul>
+<li>Lots of different models <img src="lecture1/conditioning.gif" style="float:right">
+<ul>
+<li>e.g. Conditioning (Rescorla-Wagner model) <img src="lecture1/RescorlaWagner.png" style="float:right"></li>
+</ul></li>
+</ul>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="cognitive-architectures">Cognitive Architectures</h1>
+<ul>
+<li>Don't want to make a whole new model for each situation
+<ul>
+<li>Hard to generalize</li>
+<li>Lots of parameters</li>
+<li>Can fit anything</li>
+</ul></li>
+<li>Identify basic components used across tasks
+<ul>
+<li>Adds constraints</li>
+<li>Imposes a high-level organizational theory</li>
+</ul></li>
+</ul>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="act-r">ACT-R</h2>
+<ul>
+<li>Most widely used cognitive architecture <img src="lecture1/ACTR.png" width=500px style="float:right">
+<ul>
+<li><a href="http://act-r.psy.cmu.edu/">http://act-r.psy.cmu.edu/</a></li>
+<li>Remembering lists</li>
+<li>Driving a car</li>
+<li>Dialing a phone</li>
+<li>Mental arithmetic</li>
+<li>Parsing a sentence</li>
+<li>Military training</li>
+<li>etc etc</li>
+</ul></li>
+<li>Each components has equations
+<ul>
+<li>Memory activation: <span class="math">\(A_i = ln( \sum t_j^{-d})+\beta_i\)</span></li>
+<li>Including timing</li>
+<li>Recall time: <span class="math">\(T = F e^{-fA_i}\)</span></li>
+</ul></li>
+</ul>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="problems">Problems</h2>
+<ul>
+<li>Disconnected from neuroscience
+<ul>
+<li>Trying to map components of the model to brain areas</li>
+<li>When a component is active, maybe neurons in that area are more active?</li>
+</ul></li>
+<li>No &quot;bridging laws&quot;
+<ul>
+<li>Like having rules of chemistry that never mention that it's all built out of atoms and electrons</li>
+</ul></li>
+<li>No constraints on the equations
+<ul>
+<li>Just anything that can be written down</li>
+<li>Many possibilities; hard to figure out what matches human data best</li>
+</ul></li>
+<li>Maybe that's okay
+<ul>
+<li>Do we understand the brain enough to make this connection and constrain theories?</li>
+<li>When understanding a word processor, do we worry about transistors?</li>
+</ul></li>
+</ul>
 </div></section>
     </section><section>
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="the-brain">The Brain</h1>
+<ul>
+<li>2 kg (2% of body weight)</li>
+<li>20 Watts (25% of power consumption)</li>
+<li>Area: 4 sheets of paper</li>
+<li>Neurons: 100 billion (150,000 per <span class="math">\(mm^2\)</span>)</li>
+</ul>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input_hidden">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[1]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
+<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s">&#39;jHxyP-nUhUY&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">autoplay</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">60</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[1]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+<div class="output_html rendered_html">
+
+        <iframe
+            width="500"
+            height=400"
+            src="http://www.youtube.com/embed/jHxyP-nUhUY?start=60&autoplay=0"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
 </div></section><section>
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="neurons">Neurons</h2>
+<h2 id="brain-structures">Brain structures</h2>
+<ul>
+<li>Lots of visually obvious structure</li>
+<li>Lots of greek and latin names to remember
+<ul>
+<li>frontal cortex, thalamus, amygdala, hypothalamus, substantia nigra, etc etc</li>
+</ul></li>
+</ul>
+<p><img src="lecture1/brain1.jpg" width=300px> <img src="lecture1/brain2.png" width=300px></p>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="a-neuron">A Neuron</h2>
+<iframe src=lecture1/neuron.html width=825 height=475></iframe>
+
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="neurons-in-the-brain">Neurons in the brain</h1>
+<ul>
+<li>100 billion</li>
+<li>100's or 1000's of visually distinct types</li>
+<li>Axon length: from <span class="math">\(10^{-4}\)</span> to <span class="math">\(5\)</span> m</li>
+<li>Each neuron: 500-200,000 inputs and outputs
+<ul>
+<li>72km of axons</li>
+</ul></li>
+<li>Communication: 100's of different neurotransmitters</li>
+</ul>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="neuron-communication-synapses">Neuron communication: Synapses</h2>
+<p><img src=lecture1/NeuronStructure.jpg></p>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="what-it-really-looks-like">What it really looks like</h2>
+<p><img src=lecture1/brainbow2.jpg></p>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="what-it-really-really-looks-like">What it really really looks like</h2>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input_hidden">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[20]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
+<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s">&#39;F37kuXObIBU&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">720</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">8</span><span class="o">*</span><span class="mi">60</span><span class="o">+</span><span class="mi">35</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[20]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+<div class="output_html rendered_html">
+
+        <iframe
+            width="720"
+            height=500"
+            src="http://www.youtube.com/embed/F37kuXObIBU?start=515"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
 </div></section>
     </section><section>
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="existing-methods">Existing Methods</h1>
+<h1 id="considering-the-brain">Considering the brain</h1>
 <ul>
-<li>cognitive psychology</li>
-<li>fMRI</li>
-<li>Diffusion tensor imaging</li>
 <li>lesion studies</li>
-<li>EEG</li>
-<li>single cell recordings (LFP)</li>
+<li>what are the effects of damaging different parts of the brain?
+<ul>
+<li>occipital cortex: blindness (call it visual cortex)</li>
+<li>inferior frontal gyrus: can't speak (Broca's area)</li>
+<li>posterior superior temporal gyrus: can't understand speech (Wernicke's area)</li>
+<li>fusiform gyrus: can't recognize faces (and other complex objects)</li>
+<li>prefrontal cortex: moral judgement???</li>
+<li>aperceptive visual agnosia</li>
+<li>etc, etc, etc</li>
+</ul></li>
 </ul>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="fmri">fMRI</h2>
+<ul>
+<li>Functional Magnetic Resonance Imaging <img src=lecture1/fMRI.jpg style="float:right"></li>
+<li>Measure blood oxygenation levels in the brain
+<ul>
+<li>show the difference between two tasks</li>
+<li>averaged over ~100 trials</li>
+</ul></li>
+<li>Measured while performing tasks
+<ul>
+<li>~4 second between scans</li>
+<li>some attempts at going faster, but blood vessels don't change much faster than this</li>
+</ul></li>
+<li>Shows where energy is being used in the brain
+<ul>
+<li>equivalent to figuring out how a CPU works by measuring temperature</li>
+<li>a bit more fine-grained than lesion studies</li>
+</ul></li>
+<li><a href="http://neurosynth.org/">Neurosynth</a></li>
+</ul>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="eeg">EEG</h2>
+<ul>
+<li>Electrical activity at the scalp</li>
+<li>High time resolution</li>
+<li>Large-scale communication between areas</li>
+</ul>
+<p><img src="lecture1/eeg-person.jpg" width=200px> <img src="lecture1/eeg-data.jpg" width=200px> <img src="lecture1/p300.jpg" width=200px></p>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="single-cell-recording">Single cell recording</h2>
+<iframe width="640" height="390" src="//www.youtube.com/embed/KE952yueVLA" frameborder="0" allowfullscreen></iframe>
+
+<p><img src="lecture1/catgratings.gif" width=400px></p>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="local-field-potential">Local Field Potential</h2>
+<ul>
+<li>Place electrodes into the brain, record from it
+<ul>
+<li>not necessarily right at a neuron</li>
+</ul></li>
+<li>Multielectrode recordings</li>
+<li>Post-processing: &quot;Spike sorting&quot;</li>
+</ul>
+<p><img src="lecture1/multielectrode.jpg" width=300px> <img src="lecture1/spikesorting.png" width=300px></p>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="rat-place-cells">Rat place cells</h2>
+<iframe width="640" height="390" src="//www.youtube.com/embed/lfNVv0A8QvI" frameborder="0" allowfullscreen></iframe>
+
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="calcium-imaging">Calcium Imaging</h2>
+<ul>
+<li>In a fish embryo</li>
+</ul>
+<iframe width="640" height="360" src="//www.youtube.com/embed/DGBy-BGiZIM?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="calcium-imaging">Calcium imaging</h2>
+<ul>
+<li>In a stalking fish</li>
+</ul>
+<iframe width="640" height="360" src="//www.youtube.com/embed/CpejbZ-XEyM?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="optogenetics">Optogenetics</h2>
+<iframe width="640" height="390" src="//www.youtube.com/embed/v7uRFVR9BPU" frameborder="0" allowfullscreen></iframe>
+
 </div></section>
     </section><section>
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="what-do-we-know">What do we know?</h1>
 <ul>
-<li>lots of details</li>
-<li>hard to get a big picture</li>
-<li><p>over-generalizing from data</p></li>
-<li>&quot;data-rich and theory-poor&quot;</li>
+<li>lots of details
+<ul>
+<li>Data: &quot;The proportion of type A neurons in area X is Y&quot;</li>
+<li>Conclusion: &quot;Therefore, the proportion of type A neurons in area X is Y&quot;.</li>
+</ul></li>
+<li>hard to get a big picture
+<ul>
+<li>over-generalizing from data</li>
+</ul></li>
+<li>&quot;data-rich and theory-poor&quot;
+<ul>
 <li>need some way to connect these details</li>
-<li><p>need a unifying theory</p></li>
+<li>need a unifying theory</li>
+</ul></li>
 </ul>
 </div></section><section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="levels-of-description">Levels of description</h2>
+<p><img src="lecture1/levels.png" width=500px></p>
 </div></section>
     </section><section>
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="computational-neuroscience">Computational Neuroscience</h1>
 <ul>
-<li>that which I cannot create, I do not understand</li>
-<li>build a computer simulation</li>
-<li>same fundamental change as Newton's Laws to physics</li>
-<li><p>too complex to be analytically tractable, so use computer simulation</p></li>
-<li>standard methods</li>
-<li>single neuron simulation</li>
-<li>Cat brain simulation</li>
-<li><p>needs to touch all the levels</p></li>
+<li>what I cannot create, I do not understand <img src="lecture1/understand.gif" style="float:right"></li>
+<li>build a computer simulation
+<ul>
+<li>do to neuroscience what Newton did to physics</li>
+<li>too complex to be analytically tractable, so use computer simulation</li>
+</ul></li>
+<li>Can we use this to connect the levels?</li>
 </ul>
-</div></section>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="single-neuron-simulation">Single neuron simulation</h2>
+<ul>
+<li>Hodgkin &amp; Huxley, 1952</li>
+</ul>
+<p><img src="lecture1/hh-neuron1.png" width=600px></p>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="single-neuron-simulation">Single neuron simulation</h2>
+<ul>
+<li>Hodgkin &amp; Huxley, 1952</li>
+</ul>
+<p><img src="lecture1/hh-neuron2.png" width=600px></p>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="single-neuron-simulation">Single neuron simulation</h2>
+<p><img src="lecture1/hh-circuit.png" width=200px> <img src="lecture1/hh-circuit2.jpg" width=200px> <img src="lecture1/hh-circuit3.gif" width=200px></p>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="millions-of-neurons">Millions of neurons</h2>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input_hidden">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[9]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
+<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s">&#39;_UFOSHZ22q4&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">60</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[9]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+<div class="output_html rendered_html">
+
+        <iframe
+            width="600"
+            height=400"
+            src="http://www.youtube.com/embed/_UFOSHZ22q4?start=60"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="billions-of-neurons">Billions of neurons</h2>
+<ul>
+<li>Simplify the neuron model
+<ul>
+<li><span class="math">\(C {dV \over dt} = I - {V \over R}\)</span></li>
+</ul></li>
+</ul>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input_hidden">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[13]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
+<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s">&#39;WmChhExovzY&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[13]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+<div class="output_html rendered_html">
+
+        <iframe
+            width="600"
+            height=400"
+            src="http://www.youtube.com/embed/WmChhExovzY"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="the-controversy">The controversy</h2>
+<ul>
+<li>what level of detail for the neurons? how should they be connected?</li>
+<li>IBM SyNAPSE project
+<ul>
+<li>billions of neurons, but very simple models</li>
+<li>randomly connected</li>
+<li>2009: &quot;Cat&quot;-scale brain (1 billion neurons)
+<ul>
+<li>2012: &quot;Human&quot;-scale brain (100 billion neurons)</li>
+</ul></li>
+<li>Called a <a href="http://spectrum.ieee.org/tech-talk/semiconductors/devices/blue-brain-project-leader-angry-about-cat-brain">&quot;hoax and PR stunt&quot;</a> by:<br /></li>
+</ul></li>
+<li>Blue Brain
+<ul>
+<li>much more detailed neurons</li>
+<li>randomly connected</li>
+</ul></li>
+<li>how much detail is enough?
+<ul>
+<li>how could we know?</li>
+</ul></li>
+</ul>
+</div><div class="fragment">
+    
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>The real test: connecting to <em>behaviour</em>
+<ul>
+<li>How can we build models that actually do something?</li>
+<li>How should we connect realistic neurons so they work together?</li>
+</ul></li>
+</ul>
+</div>
+    </div></section>
     </section><section>
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -2022,11 +2547,100 @@ Project Presentations
 </ul></li>
 <li>Building behaviour out of detailed low-level components</li>
 </ul>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="representation">Representation</h2>
+<ul>
+<li>How do neurons represent information?</li>
+<li>What is the mapping between a value to be stored and the activity of a group of neurons?</li>
+<li>What sorts of values can be stored?</li>
+<li>Examples:
+<ul>
+<li>Line detection in retina</li>
+<li>Place cells</li>
+</ul></li>
+<li>Claim: every group of neurons should be thought of as representing something
+<ul>
+<li>each neuron has some preferred value</li>
+<li>neurons fire more strongly the closer the value is to that preferred value</li>
+<li>values are <em>vectors</em></li>
+</ul></li>
+</ul>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="transformation">Transformation</h2>
+<ul>
+<li>Connections compute functions on those vectors</li>
+<li>Activity of one group of neurons causes another group to fire
+<ul>
+<li>One group may represent <span class="math">\(x\)</span>, connected to annother group representing <span class="math">\(y\)</span></li>
+<li>Whatever firing pattern we get in <span class="math">\(y\)</span> due to <span class="math">\(x\)</span> is a function <span class="math">\(y = f(x)\)</span></li>
+</ul></li>
+<li>Can find what class of functions are well approximated this way</li>
+<li>Puts limits on the algorithms we can implement with neurons</li>
+</ul>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="dynamics">Dynamics</h2>
+<ul>
+<li>Recurrent connections (feedback)</li>
+<li>Turns out to allow us to compute functions of this form:
+<ul>
+<li><span class="math">\({dx \over dt} = f(x, u)\)</span></li>
+<li>where <span class="math">\(x\)</span> is what the neurons represent, and <span class="math">\(u\)</span> is the input neurons</li>
+</ul></li>
+<li>Great for implementing all of control theory</li>
+<li>Also memory! (<span class="math">\({dx \over dt} = u\)</span>)</li>
+</ul>
 </div></section>
     </section><section>
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="examples">Examples</h1>
+<ul>
+<li>This approach gives us a neural compiler</li>
+<li>Given an algorithm, you can solve for the connections between neurons that will approximate that algorithm
+<ul>
+<li>Works for a wide variety of neuron models</li>
+<li>Number of neurons affects accuracy</li>
+<li>Neuron properties influence timing</li>
+</ul></li>
+</ul>
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="vision-character-recognition">Vision: character recognition</h2>
+<iframe width="640" height="390" src="//www.youtube.com/embed/2j9rRHChtXk" frameborder="0" allowfullscreen></iframe>
+
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="simple-reactions-braitenburg-vehicle">Simple reactions: Braitenburg vehicle</h2>
+<iframe width="640" height="390" src="//www.youtube.com/embed/8w9LrrFkqq8" frameborder="0" allowfullscreen></iframe>
+
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="problem-solving-tower-of-hanoi">Problem solving: Tower of Hanoi</h2>
+<iframe width="640" height="360" src="//www.youtube.com/embed/sUvHCs5y0o8?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="spaun-digit-recognition">Spaun: digit recognition</h2>
+<iframe width="640" height="360" src="//www.youtube.com/embed/f6Ul5TYK5-o?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="spaun-copy-drawing">Spaun: copy drawing</h2>
+<iframe width="640" height="390" src="//www.youtube.com/embed/WNnMhF7rnYo" frameborder="0" allowfullscreen></iframe>
+
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="spaun-addition-by-counting">Spaun: addition by counting</h1>
+<iframe width="640" height="390" src="//www.youtube.com/embed/mP7DX6x9PX8" frameborder="0" allowfullscreen></iframe>
+
+</div></section><section>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="spaun-pattern-completion">Spaun: pattern completion</h2>
+<iframe width="640" height="390" src="//www.youtube.com/embed/Q_LRvnwnYp8" frameborder="0" allowfullscreen></iframe>
+
 </div></section>
     </section><section>
     <section>
@@ -2039,6 +2653,7 @@ Project Presentations
 <li>Potential medical applications</li>
 <li>New ways of understanding the mind and who we are</li>
 </ul>
+<p><img src="lecture1/compare.png"></p>
 </div></section>
     </section><section>
     <section>
