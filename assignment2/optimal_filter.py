@@ -41,6 +41,7 @@ R = numpy.fft.fftshift(numpy.fft.fft(r)) #
 
 sigma_t = 0.025                          #
 W2 = numpy.exp(-omega**2*sigma_t**2)     #
+W2 = W2 / sum(W2)                        #
 
 CP = X*R.conjugate()                  #
 WCP = numpy.convolve(CP, W2, 'same')  #
